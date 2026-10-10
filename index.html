@@ -4,9 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Google Business Profile audit · Drumm Carpentry, Kitchens &amp; Wardrobes</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/drumreach-icon.png">
+<meta name="theme-color" content="#B92533">
+<title>Google Business Profile audit · Drumm Carpentry, Kitchens &amp; Wardrobes · Drumreach</title>
 <style>
-:root{--ink:#1f2a28;--muted:#5b6b67;--brand:#1d4d43;--brand2:#2e7d6b;--bg:#f5f8f7;--card:#fff;--line:#dde6e3;--ok:#1f6b3a;--okbg:#dff0e6;--bad:#a2321f;--badbg:#fbe3dd;--warn:#8a5a00;--warnbg:#fdf0d8;--info:#2f4f8a;--infobg:#e3ebf8}
+:root{--ink:#151515;--muted:#6b6866;--brand:#151515;--brand2:#B92533;--bg:#FAF8F5;--card:#fff;--line:#ece7e3;--ok:#1d7a45;--okbg:#e2f3e8;--bad:#B92533;--badbg:#fbe4e6;--warn:#9a5b00;--warnbg:#fcefd9;--info:#3d3a38;--infobg:#efebe8;--far:#e2701f}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;font-size:16px}
@@ -35,7 +39,7 @@ h2{color:var(--brand);font-size:1.3rem;margin:0 0 12px}
 .score .s{font-size:.78rem;color:var(--muted);margin-top:6px}
 .score.alert .v{color:var(--bad)}
 .stars{display:grid;grid-template-columns:42px 1fr 40px;gap:8px 10px;align-items:center;max-width:560px}
-.bar{background:#e8eeec;border-radius:6px;height:14px;overflow:hidden}
+.bar{background:#ece7e3;border-radius:6px;height:14px;overflow:hidden}
 .bar span{display:block;height:100%;background:var(--brand2);border-radius:6px;transition:width .4s ease}
 #stars .bar span{animation:grow .9s ease both}@keyframes grow{from{width:0}}
 .stars .n{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
@@ -47,12 +51,12 @@ ul.good li{margin-bottom:6px}
 .filters .count{font-size:.85rem;color:var(--muted);align-self:center;margin-left:6px}
 table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.9rem}
 th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{background:#eef5f2;color:var(--brand);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.03em}
+th{background:#f4f0ec;color:var(--brand);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.03em}
 tr:last-child td{border-bottom:0}
 td .src{display:block;font-size:.78rem;color:var(--muted);word-break:break-all}
 .tag{display:inline-block;font-size:.76rem;font-weight:600;padding:2px 9px;border-radius:12px;white-space:nowrap}
 .t-ok{background:var(--okbg);color:var(--ok)}.t-bad{background:var(--badbg);color:var(--bad)}.t-warn{background:var(--warnbg);color:var(--warn)}.t-info{background:var(--infobg);color:var(--info)}
-.group{font-weight:600;color:var(--brand);background:#f7faf9}
+.group{font-weight:600;color:var(--brand);background:#faf7f4}
 h3.sub{font-size:1.02rem;color:var(--brand);margin:20px 0 8px}
 .progress{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .progress .bar{flex:1;min-width:160px;height:10px}
@@ -60,7 +64,7 @@ h3.sub{font-size:1.02rem;color:var(--brand);margin:20px 0 8px}
 details.fix{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
 details.fix summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:center}
 details.fix summary::-webkit-details-marker{display:none}
-details.fix .num{flex:none;background:var(--brand);color:#fff;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-size:.85rem;font-weight:700}
+details.fix .num{flex:none;background:var(--brand2);color:#fff;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-size:.85rem;font-weight:700}
 details.fix .ttl{flex:1;font-weight:600}
 details.fix .new{font-size:.7rem;font-weight:700;color:var(--info);background:var(--infobg);border-radius:10px;padding:1px 7px;margin-left:6px;vertical-align:middle}
 details.fix .chev{transition:transform .2s;color:var(--muted)}
@@ -75,7 +79,8 @@ details.fix.done .ttl{text-decoration:line-through;color:var(--muted)}
 .effort{font-size:.74rem;font-weight:600;padding:2px 9px;border-radius:12px;white-space:nowrap;flex:none}
 .e-quick{background:var(--okbg);color:var(--ok)}.e-medium{background:var(--warnbg);color:var(--warn)}
 .note{font-size:.9rem;color:var(--muted)}
-.cta{background:var(--brand);color:#fff;border-radius:14px;padding:22px}
+.cta{background:var(--brand);color:#fff;border-radius:14px;padding:22px;border-top:5px solid var(--brand2)}
+.cta a{color:#fff}
 .cta h2{color:#fff}
 .cta p{margin:0 0 10px}
 .pos{display:inline-block;min-width:2.8em;text-align:center;font-weight:700;font-size:.85rem;padding:3px 10px;border-radius:14px;white-space:nowrap}
@@ -186,12 +191,68 @@ section,details.fix{scroll-margin-top:64px}
  .hic{width:24px;height:24px}
 }
 @media print{.hfade{animation:none}.hero{padding:20px 0}}
+/* ---- Drumreach rebrand: sections below the hero ---- */
+#momentum,#rankmap{scroll-margin-top:64px}
+main section>h2{border-left:4px solid var(--brand2);padding-left:10px}
+.cta h2{border-left:0;padding-left:0}
+#stars .bar span{background:var(--ink)}
+nav.jump a:hover{background:#f6f1ee;color:var(--brand2)}
+.hinv{font-weight:700;font-size:1.05rem;letter-spacing:-.01em;margin:0 0 6px}
+.hseg.h28{gap:2px}
+.hseg .a{background:#e0a21a}.hseg .o{background:var(--far)}
+.hmore{display:inline-block;margin-top:10px;font-size:.84rem;font-weight:600;color:var(--dr-red);text-decoration:none}
+.hmore:hover,.hmore:focus-visible{text-decoration:underline}
+/* rankings map */
+.rgwrap{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:18px;align-items:start}
+.rb{display:inline-block;font:inherit;font-weight:700;font-size:.84rem;border:0;border-radius:14px;padding:5px 0;width:100%;max-width:62px;cursor:pointer;line-height:1.3;font-variant-numeric:tabular-nums}
+.rb.g{background:#1d7a45;color:#fff}.rb.a{background:#f2b632;color:#151515}.rb.o{background:var(--far);color:#151515}.rb.r{background:#B92533;color:#fff}
+span.rb{cursor:default;width:auto;padding:3px 10px;max-width:none}
+button.rb:hover{filter:brightness(1.08)}
+button.rb:focus-visible,button.rb[aria-pressed=true]{outline:3px solid #151515;outline-offset:2px}
+table.rgrid{table-layout:fixed}
+table.rgrid th,table.rgrid td{text-align:center;padding:8px 4px;vertical-align:middle}
+table.rgrid th{text-transform:none;letter-spacing:0;font-size:.78rem;line-height:1.25}
+table.rgrid th:first-child,table.rgrid td:first-child{text-align:left;width:28%;padding-left:12px}
+table.rgrid td:first-child{font-weight:600}
+.rdetail{margin-top:12px}
+.rdetail h4{margin:0 0 6px;font-size:1rem}
+.rdetail p{margin:6px 0 0}
+.rmapc{padding:12px}
+.rmapc .filters{margin-bottom:6px}
+.rmapc .filters button{padding:5px 11px;font-size:.82rem}
+#rankMap{width:100%;height:auto;display:block}
+#rankMap .town{cursor:pointer}
+#rankMap .town:focus{outline:none}
+#rankMap .town:focus-visible circle,#rankMap .town.sel circle{stroke:#151515;stroke-width:4}
+ul.rnotes{margin:12px 0 0;padding-left:20px;font-size:.9rem;color:var(--muted)}
+ul.rnotes li{margin-bottom:4px}
+/* review momentum */
+.mom{margin-top:14px}
+.mstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:4px 0 12px}
+.mstat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.mstat .v{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.mstat .l{font-size:.82rem;color:var(--muted);line-height:1.35}
+.mom p{margin:0 0 8px}.mom p:last-child{margin-bottom:0}
+@media (max-width:860px){.rgwrap{grid-template-columns:1fr}.rmapc{max-width:520px}.mstats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+ table.rgrid{display:table;width:100%;border:1px solid var(--line);background:#fff;border-radius:12px}
+ table.rgrid thead{display:table-header-group}
+ table.rgrid tbody{display:table-row-group}
+ table.rgrid tr{display:table-row;background:none;border:0;border-radius:0;margin:0;padding:0}
+ table.rgrid th,table.rgrid td{display:table-cell;width:auto;padding:7px 2px;border-bottom:1px solid var(--line)}
+ table.rgrid tr:last-child td{border-bottom:0}
+ table.rgrid th:first-child,table.rgrid td:first-child{width:27%;padding-left:8px}
+ table.rgrid th{font-size:.7rem}
+ table.rgrid td:first-child{font-size:.84rem}
+ .rb{font-size:.78rem;max-width:54px}
+}
+
 </style>
 </head>
 <body>
 <header class="hero" id="audit"><div class="hw">
  <h1 class="hfade" style="--d:0">Your Google Maps audit.<span class="l2"><s>Invisible in Cork.</s> <em>Worth fixing.</em></span></h1>
- <p class="sub hfade" style="--d:1">13 checks. Your real listing. Drumm Carpentry, Kitchens &amp; Wardrobes, Mallow.</p>
+ <p class="sub hfade" style="--d:1">14 checks. Your real listing. Drumm Carpentry, Kitchens &amp; Wardrobes, Mallow.</p>
  <div class="hwin hfade" style="--d:2">
   <div class="hwin-bar">
    <div class="hwin-dots" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -199,42 +260,45 @@ section,details.fix{scroll-margin-top:64px}
    <div class="hwin-logo"><img src="assets/drumreach-icon.png" alt="Drumreach" width="30" height="30"></div>
   </div>
   <div class="hwin-body">
-   <p class="hdone hfade" style="--d:3"><img src="assets/drumreach-icon.png" alt="" width="24" height="24"><b>Audit complete.</b> <span class="hdot c">4 <span>critical</span></span><span class="hdot r">6 <span>at risk</span></span><span class="hdot h">3 <span>healthy</span></span></p>
+   <p class="hdone hfade" style="--d:3"><img src="assets/drumreach-icon.png" alt="" width="24" height="24"><b>Audit complete.</b> <span class="hdot c">4 <span>critical</span></span><span class="hdot r">6 <span>at risk</span></span><span class="hdot h">4 <span>healthy</span></span></p>
    <div class="hgrid">
-    <ul class="hchecks hfade" style="--d:4" aria-label="The 13 checks">
+    <ul class="hchecks hfade" style="--d:4" aria-label="The 14 checks">
     <li><a href="#reviews"><span class="hic h" role="img" aria-label="Healthy"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Reviews &amp; rating</span><span class="hfind h">4.9 stars, 118 reviews</span></a></li>
     <li><a href="#summary"><span class="hic h" role="img" aria-label="Healthy"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Photos</span><span class="hfind h">167 photos</span></a></li>
     <li><a href="#rank"><span class="hic h" role="img" aria-label="Healthy"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Maps rank near Mallow</span><span class="hfind h">#1-2 for 4 of 4 searches</span></a></li>
     <li><a href="#rank"><span class="hic c" role="img" aria-label="Critical">!</span><span class="nm">Maps rank from Cork city</span><span class="hfind c">Not in top 20 (4 of 4)</span></a></li>
-    <li><a href="#fix-1"><span class="hic c" role="img" aria-label="Critical">!</span><span class="nm">Primary category</span><span class="hfind c">Kitchen supply store</span></a></li>
+    <li><a href="#fix-1"><span class="hic c" role="img" aria-label="Critical">!</span><span class="nm">Primary category</span><span class="hfind c">Main: Kitchen supply store</span></a></li>
     <li><a href="#fix-2"><span class="hic c" role="img" aria-label="Critical">!</span><span class="nm">Website menu link</span><span class="hfind c">Fitted Kitchens page 404</span></a></li>
     <li><a href="#fix-3"><span class="hic c" role="img" aria-label="Critical">!</span><span class="nm">Website location</span><span class="hfind c">6 pages say Newmarket</span></a></li>
-    <li><a href="#fix-12"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Ads vs free rankings</span><span class="hfind r">Ads on searches you already win</span></a></li>
+    <li><a href="#fix-12" title="If you run Google Ads on Mallow-area searches, you may be paying for clicks you already get for free in Maps. Check which areas and keywords your ads target."><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Ads vs free rankings</span><span class="hfind r">Check your ad targeting</span></a></li>
     <li><a href="#fix-4"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Products list</span><span class="hfind r">7 items at EUR 0.00</span></a></li>
     <li><a href="#fix-7"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Google posts</span><span class="hfind r">Last post Aug 2024</span></a></li>
     <li><a href="#nap"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Name, address &amp; phone</span><span class="hfind r">Website 3 of 5 match; directories out of date</span></a></li>
     <li><a href="#fix-5"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Old domain</span><span class="hfind r">Expired security certificate</span></a></li>
-    <li><a href="#fix-8"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Review replies</span><span class="hfind r">Generic one-liners</span></a></li>
+    <li><a href="#momentum"><span class="hic h" role="img" aria-label="Healthy"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nm">Review replies</span><span class="hfind h">27 of 30 replied, about 11h median</span></a></li>
+    <li><a href="#fix-14"><span class="hic r" role="img" aria-label="At risk">!</span><span class="nm">Duplicate listing</span><span class="hfind r">Unrated 2nd pin found</span></a></li>
     </ul>
     <div class="hside">
      <div class="hpanel hfade" style="--d:5">
-      <div class="hpanel-h">Checks passed <span class="hpill">13 checks</span></div>
+      <div class="hpanel-h">Checks passed <span class="hpill">14 checks</span></div>
       <div class="hring">
-       <svg viewBox="0 0 100 100" role="img" aria-label="3 of 13 checks healthy">
+       <svg viewBox="0 0 100 100" role="img" aria-label="4 of 14 checks healthy">
         <circle cx="50" cy="50" r="40" fill="none" stroke="#e7e1dc" stroke-width="10"/>
-        <circle cx="50" cy="50" r="40" fill="none" stroke="#1d7a45" stroke-width="10" stroke-linecap="round" stroke-dasharray="58.00 251.33" transform="rotate(-90 50 50)"/>
-        <text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#151515" font-family="system-ui,sans-serif">3/13</text>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#1d7a45" stroke-width="10" stroke-linecap="round" stroke-dasharray="71.81 251.33" transform="rotate(-90 50 50)"/>
+        <text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#151515" font-family="system-ui,sans-serif">4/14</text>
        </svg>
-       <div><div class="big">3 of 13 healthy</div><div class="sm"><span class="hdot c">4 <span>critical fixes</span></span></div></div>
+       <div><div class="big">4 of 14 healthy</div><div class="sm"><span class="hdot c">4 <span>critical fixes</span></span></div></div>
       </div>
       <div class="hinfo"><button type="button" aria-expanded="false" aria-controls="howCounted">How this is counted</button>
-       <p id="howCounted" hidden>Each of the 13 checks is marked healthy, at risk or critical from what we saw signed out on 10 Oct 2026. The ring shows how many came out healthy. It isn't a score out of 100, and the checks aren't weighted.</p></div>
+       <p id="howCounted" hidden>Each of the 14 checks is marked healthy, at risk or critical from what we found on 10 Oct 2026, through manual checks (signed out) and automated collection. The ring shows how many came out healthy. It isn't a score out of 100, and the checks aren't weighted.</p></div>
      </div>
      <div class="hpanel hfade" style="--d:6">
-      <div class="hpanel-h">Where you're invisible <span class="hpill">8 Maps searches</span></div>
-      <div class="hnum"><span class="big">4 of 4</span><span class="lbl">Cork city Maps searches where you're not in the top 20</span></div>
-      <div class="hseg" role="img" aria-label="8 Google Maps searches checked: 4 from Mallow where you were in the top 2, 4 from Cork city where you were not in the top 20"><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i></div>
-      <div class="hleg"><span style="--c:#1d7a45"><span><b>4 from Mallow</b>In the top 2</span></span><span style="--c:#B92533"><span><b>4 from Cork city</b>Not in the top 20</span></span></div>
+      <div class="hpanel-h">Where you're invisible <span class="hpill">28 Maps searches</span></div>
+      <div class="hinv">Invisible in Cork city and Blarney</div>
+      <div class="hnum"><span class="big">8 of 8</span><span class="lbl">searches there where you're not in the top 20 on Google Maps</span></div>
+      <div class="hseg h28" role="img" aria-label="28 Google Maps searches checked from 7 towns: 9 in the top 3, 7 at #4 to #10, 1 at #11 to #20, 11 not in the top 20"><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="g"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="o"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i></div>
+      <div class="hleg"><span style="--c:#1d7a45"><span><b>9 in the top 3</b>Mostly Mallow &amp; Buttevant</span></span><span style="--c:#e0a21a"><span><b>7 at #4–10</b>First page</span></span><span style="--c:#e2701f"><span><b>1 at #11–20</b>Lower down</span></span><span style="--c:#B92533"><span><b>11 not in the top 20</b>Including all 8 in Cork city &amp; Blarney</span></span></div>
+      <a class="hmore" href="#rankmap">See the rankings map ›</a>
      </div>
      <div class="hpanel hfade" style="--d:7">
       <div class="hpanel-h">Priority actions <span class="hpill">Start here</span></div>
@@ -263,10 +327,11 @@ section,details.fix{scroll-margin-top:64px}
    <p>Your Google Business Profile is in good shape where it counts most: a 4.9-star rating from 118 reviews, 167 photos and a clear, well-written description. Customers clearly rate your work.</p>
    <p>A handful of fixes, mainly to how the profile describes your business to Google, could help it show up for more of the right searches, such as people looking for fitted kitchens, wardrobes or a carpenter. Most are quick jobs, and none of them involve changing how you work.</p>
    <p>We also checked your website and a few online directories against the profile. Your address and main phone number are consistent on your own website, but a few pages still say you're based in Newmarket, the "Fitted Kitchens" link in the main menu leads to a "Page not found" error, and Houzz and Golden Pages still show your old Newmarket details, phone numbers and web address.</p>
+   <p>On the profile itself, only two attributes are set: delivery and card payments (credit and debit cards). We also found a second, unrated pin called 'Drumm Carpentry Factory' that shows up in some 'carpenter' searches on Google Maps, which may be a duplicate listing.</p>
    <h3 class="sub" style="margin-top:14px">What's working</h3>
    <ul class="good">
     <li><b>Reviews.</b> 4.9 stars from 118 reviews. That's an excellent record.</li>
-    <li><b>You reply to reviews.</b> All 5 reviews we could see had a reply from you.</li>
+    <li><b>You reply to reviews, and quickly.</b> 27 of your 30 newest reviews have a reply, the median reply time is about 10.6 hours, and every negative review has been answered.</li>
     <li><b>Customers describe the work in detail.</b> Reviews mention kitchens, a pantry, a walk-in wardrobe, a media wall, living room units, floating shelves, a utility, a hot press, the showroom, and the fact that you organise all the trades.</li>
     <li><b>Plenty of photos.</b> 167 photos, including some posted by you (one dated May 2025).</li>
     <li><b>A good description.</b> It explains clearly that you're a one-stop shop for fitted kitchens and wardrobes, that all trades are organised, and that there are 7 door types and 37 styles to choose from.</li>
@@ -282,20 +347,36 @@ section,details.fix{scroll-margin-top:64px}
 </section>
 <section id="rank">
  <h2>Where you rank today</h2>
- <p class="note">Google Maps results depend on where the person searching is. Someone in Mallow and someone in Cork city typing the same words will see different businesses. So we ran each search signed out on 10 October 2026 from two points: <b>Mallow town centre</b> and <b>Cork city centre</b>. Positions count only the ordinary, unpaid results; sponsored listings and ads are noted separately. Results change from day to day, so treat this as a snapshot.</p>
- <div class="filters" id="rankFilter"><button aria-pressed="true" data-loc="all">Both</button><button aria-pressed="false" data-loc="Mallow">Mallow</button><button aria-pressed="false" data-loc="Cork">Cork city</button><span class="count"></span></div>
- <div class="legend"><span><span class="pos p-top">#1–3</span> top three</span><span><span class="pos p-mid">#4–10</span> on the first page</span><span><span class="pos p-out">Not in top 20</span> not in the first 20 results</span></div>
- <h3 class="sub">Google Maps</h3>
- <table id="mapsTable"><thead><tr><th>Searched from</th><th>Search</th><th>Your position</th><th>Top three on the map</th><th>Sponsored listing</th></tr></thead><tbody></tbody></table>
+ <p class="note">Google Maps results depend on where the person searching is. Someone in Mallow and someone in Cork city typing the same words will see different businesses. So on 10 October 2026 we ran four searches on Google Maps from the centre of seven towns around you, 28 searches in all, using automated collection. Positions count only the ordinary, unpaid results; no sponsored listings were flagged in these searches. Results change from day to day, so treat this as a snapshot.</p>
+ <h3 class="sub" id="rankmap">Rankings map: Google Maps</h3>
+ <div class="legend"><span><span class="rb g">#1–3</span> top three</span><span><span class="rb a">#4–10</span> first page</span><span><span class="rb o">#11–20</span> lower down</span><span><span class="rb r">&gt;20</span> not in the top 20</span></div>
+ <div class="rgwrap">
+  <div>
+   <table class="rgrid" id="rankGrid"><thead><tr><th scope="col">Searched from</th><th scope="col">fitted kitchens</th><th scope="col">fitted wardrobes</th><th scope="col">kitchen showroom</th><th scope="col">carpenter</th></tr></thead><tbody></tbody></table>
+   <p class="note" style="margin:8px 0 0">Tap or hover over a position to see the top three for that search.</p>
+   <div class="card rdetail" id="rankDetail" aria-live="polite"></div>
+  </div>
+  <div class="card rmapc">
+   <div class="filters" id="mapTabs" role="group" aria-label="Choose a search to show on the map"></div>
+   <svg id="rankMap" viewBox="0 0 600 610" role="img" aria-label="Map of the seven towns checked, coloured by your Google Maps position for the selected search"></svg>
+   <p class="note" style="margin:4px 4px 0;font-size:.8rem">Towns placed roughly by their map coordinates. Grey: not checked.</p>
+  </div>
+ </div>
+ <ul class="rnotes">
+  <li>Newmarket and Killarney weren't checked.</li>
+  <li>From Fermoy, Charleville and Kanturk, some 'kitchen showroom' and 'fitted wardrobes' searches returned far-away businesses (showrooms in New York, a wardrobe company in Leeds), so local results there are thin and those positions are less reliable.</li>
+  <li>'Drumm Fencing &amp; Carpentry Cork', which shows up in the Kanturk carpenter search, is a different business.</li>
+  <li>An unrated pin called 'Drumm Carpentry Factory' also appeared in 'carpenter' searches (#2 from Charleville, #5 from Kanturk, #9 from Buttevant). See the fix 'Check the second Drumm listing'.</li>
+ </ul>
  <h3 class="sub">Google web search</h3>
- <p class="note" style="margin-top:0">For web search, the Mallow / Cork filter goes by the town in the search.</p>
- <table id="webTable"><thead><tr><th>Search</th><th>Your organic position</th><th>Page that showed</th><th>Your profile in the map pack</th><th>Notes</th></tr></thead><tbody></tbody></table>
+ <p class="note" style="margin-top:0">Collected automatically on 10 October 2026 with the location set to Cork, on desktop, first two pages of results (about the top 20). Web results depend on where the person searching is. Our earlier manual check, from a different location, gave different positions (for example #1 for 'fitted kitchens Mallow'), so treat web positions as indicative. Whether your profile showed in the map pack wasn't available from this source, so it isn't shown.</p>
+ <table id="webTable"><thead><tr><th>Search</th><th>Your organic position</th><th>Page that showed</th><th>Ads on the page</th><th>Notes</th></tr></thead><tbody></tbody></table>
  <div class="callout">
   <h3>What this means</h3>
-  <p><b>Around Mallow, you already rank at or near the top for free.</b> That includes 'fitted kitchens Mallow', where you're #1 in the ordinary results and in the map pack, but you're also paying for an ad. It's worth checking whether that ad spend is needed (see the fix 'Review Mallow ad spend' below).</p>
-  <p><b>In Cork city, the bigger market, your profile doesn't appear in the top 20 on Maps</b> for any of the four searches we tried. For 'fitted kitchens Cork', your only presence on the page was your paid ad.</p>
+  <p><b>Around Mallow, you already rank at or near the top on Google Maps for free:</b> #1 or #2 for all four searches from Mallow, and in the top two for three of the four from Buttevant. If you run Google Ads on Mallow-area searches, you may be paying for clicks you already get for free in Maps. Check which areas and keywords your ads target (see the fix 'Review Mallow ad spend' below).</p>
+  <p><b>In Cork city and Blarney, the bigger market, your profile doesn't appear in the top 20 on Maps</b> for any of the four searches (8 of 8). On Google web search from Cork, your website is #6 for 'fitted kitchens Cork' and 'kitchen showroom Cork'.</p>
+  <p><b>In the towns in between, you're mostly on the first page.</b> From Fermoy, Charleville and Kanturk you're between #3 and #6 for fitted kitchens and fitted wardrobes. 'Kitchen showroom' is the weak spot: outside Mallow and Buttevant you're not in the top 20 for it anywhere we checked.</p>
   <p>Some of this is down to distance. Mallow is about 35 km from the city, and that can't be fully fixed. But the category, services and website-location fixes in this report are aimed at improving how you show up for Cork searches. They should help, but they won't guarantee a top-three place on the Cork city map.</p>
-  <p><b>Wardrobes is the closest opportunity.</b> For 'fitted wardrobes Cork' you're #2 on Google web search, but not in the top 20 on Maps.</p>
  </div>
 </section>
 
@@ -304,6 +385,18 @@ section,details.fix{scroll-margin-top:64px}
  <div class="card">
   <div class="stars" id="stars"></div>
   <p class="note" style="margin:12px 0 0">118 reviews in total: 111 five-star, 4 four-star, 1 three-star, none two-star and 2 one-star.</p>
+ </div>
+ <div class="card mom" id="momentum">
+  <h3 class="sub" style="margin-top:0">Review momentum</h3>
+  <div class="mstats">
+   <div class="mstat"><div class="v">21</div><div class="l">reviews in the last 365 days</div></div>
+   <div class="mstat"><div class="v">4</div><div class="l">in the last 90 days</div></div>
+   <div class="mstat"><div class="v">27 of 30</div><div class="l">newest reviews have a reply from you</div></div>
+   <div class="mstat"><div class="v">10.6 h</div><div class="l">median time to reply (18 of 27 replies within a day)</div></div>
+  </div>
+  <p><b>New reviews have slowed.</b> Only 4 came in over the last 90 days, about 1.3 a month, against about 1.75 a month over the past year. The newest one is from 7 September 2026.</p>
+  <p><b>Your replies are strong.</b> 19 of the 21 reviews from the last year have a reply, and all three negative reviews (two 1-star, one 3-star) were answered. Three reviews have no reply yet: 7 Sep 2026 (4 stars), 11 Nov 2025 (5 stars) and 3 Jul 2025 (4 stars).</p>
+  <p class="note">Based on your 30 newest reviews (4 Jun 2025 to 7 Sep 2026), collected automatically on 10 Oct 2026.</p>
  </div>
 </section>
 
@@ -340,6 +433,7 @@ section,details.fix{scroll-margin-top:64px}
    <li>NK Carpenter: 5.0 stars, 12 reviews</li>
    <li>Carpentry Joinery Cork: 4.0 stars, 4 reviews</li>
   </ol>
+  <p>The automated check from Cork city centre on the same day ('carpenter') found the same three in a different order (NK Carpenter, Carpentry Joinery Cork, then Elevate), and your profile wasn't in the top 20.</p>
   <p class="note" style="margin-bottom:0">Your profile wasn't in the top three, even though you have far more reviews. Mallow is about 35 km from Cork city, though, and where the person searching is located has a big effect on these results, so this isn't conclusive. We mention it only because the category fix is aimed at exactly this kind of search.</p>
  </div>
 </section>
@@ -347,11 +441,13 @@ section,details.fix{scroll-margin-top:64px}
 <section id="unchecked">
  <h2>Things we couldn't check from public view</h2>
  <div class="card">
-  <p style="margin-top:0">We looked at your profile, website and directories the way a customer would, without signing in. Some things can only be checked from inside your accounts:</p>
+  <p style="margin-top:0">We looked at your profile, website and directories the way a customer would, without signing in, and collected profile, review and ranking data automatically from public Google pages. Some things can only be checked from inside your accounts:</p>
   <ul class="good">
-   <li>How quickly new reviews are coming in.</li>
-   <li>Questions and answers on the profile.</li>
-   <li>Attributes, such as whether you offer online estimates.</li>
+   <li>Questions and answers on the profile. The automated collection returned none, so we couldn't confirm either way.</li>
+   <li>The date of your latest Google post. The automated collection returned no posts, so 'Last post Aug 2024' is from our manual check on 10 Oct 2026.</li>
+   <li>Whether you currently run Google Ads, and which areas and keywords they target.</li>
+   <li>Whether your profile shows in the map pack on Google web search (not available from the automated source).</li>
+   <li>Rankings from Newmarket and Killarney.</li>
    <li>Whether a Services list already exists.</li>
    <li>Which service areas (if any) are set on the profile.</li>
    <li>Profile insights, such as how many calls and direction requests the profile gets.</li>
@@ -366,14 +462,14 @@ section,details.fix{scroll-margin-top:64px}
  <div class="cta">
   <h2>Next steps</h2>
   <p>You've already done the hard part: a long record of happy customers and plenty of photos of your work. The fixes above are mostly about making sure Google, and everyone else online, has the same, up-to-date picture of what you do and where you are.</p>
-  <p>You can make most of them yourself from the profile editor, and the first one alone takes only a few minutes. If you'd rather not spend the time on it, we'd be glad to make these changes for you for <b>[price]</b>, including rewriting the Products list, setting up the Services list, and correcting the Houzz and Golden Pages listings.</p>
-  <p style="margin:0">Just reply to the email this came with, or give us a call, and we can talk it through.</p>
-  <p style="margin:14px 0 0">Kind regards,<br><b>[Your company]</b></p>
+  <p>You can make most of them yourself from the profile editor, and the first one alone takes only a few minutes. If you'd rather not spend the time on it, we'd be glad to make these changes for you, with the fix package from <b>EUR 295 ex VAT</b>, including rewriting the Products list, setting up the Services list, and correcting the Houzz and Golden Pages listings. Ongoing monthly support is from <b>EUR 99 ex VAT</b>.</p>
+  <p style="margin:0">Just reply to the email this came with, or email <a href="mailto:shane@drumreach.com">shane@drumreach.com</a>, and we can talk it through.</p>
+  <p style="margin:14px 0 0">Kind regards,<br><b>Drumreach</b><br><a href="mailto:shane@drumreach.com">shane@drumreach.com</a> · <a href="https://drumreach.com" target="_blank" rel="noopener">drumreach.com</a></p>
  </div>
 </section>
 </main>
 
-<footer><div class="wrap">Checked on 10 October 2026, signed out, from public pages only. Rankings were checked from Mallow town centre and Cork city centre. Website pages checked: drummkitchens.ie home, contact, about and service pages. Directories checked: Houzz, Golden Pages, Facebook (signed-out view) and the company register via Solocheck. Links in the tables go to the page where each detail was seen.</div></footer>
+<footer><div class="wrap">Data from Google Maps and Google Search, checked 10 Oct 2026 via manual checks and automated collection. Google Maps rankings were collected from the centres of Mallow, Buttevant, Charleville, Kanturk, Fermoy, Blarney and Cork city; Google web search with the location set to Cork, on desktop. Website pages checked: drummkitchens.ie home, contact, about and service pages. Directories checked: Houzz, Golden Pages, Facebook (signed-out view) and the company register via Solocheck. Links in the tables go to the page where each detail was seen.<br>Prepared by Drumreach · <a href="https://drumreach.com" target="_blank" rel="noopener">drumreach.com</a> · <a href="mailto:shane@drumreach.com">shane@drumreach.com</a></div></footer>
 
 <script>
 const G={name:"Drumm Carpentry, Kitchens & Wardrobes",addr:"The Spa, Mallow, Co. Cork, P51 V042",phone:"(022) 20289",hours:"Mon–Fri 9:30–17:30, Sat 10–17, Sun closed",web:"drummkitchens.ie"};
@@ -451,18 +547,20 @@ const LOC=[
  {n:"Towns near Mallow",site:"No pages for nearby towns. Project write-ups mention Carrigaline, Cork city and Kilbrin.",gbp:"Not mentioned",s:"miss",u:"https://drummkitchens.ie/projects/"}
 ];
 const FIX=[
- {t:"Change your main business category",e:"quick",f:"Your main category is 'Kitchen supply store', and no other categories are showing.",w:"The category is one of the main ways Google decides which searches to show you for. 'Kitchen supply store' tells Google you're a shop selling kitchen supplies, not a business that designs and fits kitchens and wardrobes.",d:"Change the main category to the closest match for fitted kitchens, such as 'Kitchen remodeler' or 'Cabinet maker'. Then add 'Carpenter' and a wardrobe or fitted furniture category as extra categories. The exact options vary, so confirm what's available in the profile editor."},
+ {t:"Change your main business category",e:"quick",u:1,f:"Your main (primary) category is 'Kitchen supply store'. The profile has 4 categories in all: Kitchen supply store (primary), Fitted furniture supplier, Kitchen furniture store and Kitchen remodeler.",w:"The category is one of the main ways Google decides which searches to show you for. 'Kitchen supply store' tells Google you're a shop selling kitchen supplies, not a business that designs and fits kitchens and wardrobes.",d:"Make 'Kitchen remodeler' your primary category. It's already on the profile as a secondary category, so this is a quick swap in the profile editor, and you don't need to add any new categories."},
  {t:"Fix the broken 'Fitted Kitchens' link on your website",e:"quick",n:1,f:"The 'Fitted Kitchens' item in your main menu, and the 'Learn More' button under fitted kitchens on the home page, go to drummkitchens.ie/fitted-kitchens/. That redirects to a page that says 'Page not found'. Your real fitted kitchens page, drummkitchens.ie/fitted-kitchens-cork/, works fine.",w:"Fitted kitchens is your main line of work, and lots of people who click through from Google will go straight for that menu item. A dead end there loses people at the worst possible moment.",d:"Point the menu item and the button at /fitted-kitchens-cork/, or set up a redirect from /fitted-kitchens/ to it. Whoever looks after your website can do this in a few minutes."},
  {t:"Update the pages that still say Newmarket",e:"quick",n:1,f:"Six pages still say you're based in Newmarket, or that your showroom is there: carpentry services, fitted furniture, fitted kitchens, flooring, kitchen showroom and under-stairs storage. The map on your contact page is also centred on the Newmarket area, about 26 km from The Spa.",w:"Google reads your website to check where you are. Two different towns can confuse it, and a customer could easily head for the old showroom.",d:"Change those sentences to Mallow, and re-embed the contact page map from your current Google listing so it centres on The Spa."},
  {t:"Tidy up your Products list",e:"medium",f:"There are 7 products, all priced at €0.00, with names that read like search terms rather than things you sell: 'carpenter', 'flooring cork', 'Fitted wardrobes cork', 'Fitted Kitchens Cork', 'kitchen showrooms cork', 'fitted furniture cork' and 'under stairs storage'.",w:"Customers can see this section on your profile. A price of €0.00 looks like a mistake and can make an otherwise strong profile look neglected.",d:"Replace them with your real offerings, for example Fitted kitchens, Built-in wardrobes, Pantries, Media walls and Under-stairs storage. Give each one a photo of a finished job, a short description, a link to the matching page on your website, and either a 'from' price or no price at all."},
  {t:"Fix your old web address",e:"quick",u:1,f:"Your latest Google update (8 August 2024) and one from 2017 link to drummcarpentrycork.ie/kitchen-fitter/. That page now shows 'Not Found'. The old site's security certificate also ran out in February 2026, so most browsers show a security warning before forwarding people to drummkitchens.ie, and the plain http:// version didn't respond at all when we tried it.",w:"Anyone who clicks those links, or an old link on Houzz or Golden Pages, hits a warning or a dead end instead of reaching you.",d:"Ask whoever looks after the domain to renew the certificate and redirect every old address (not just the home page) to drummkitchens.ie, with /kitchen-fitter/ going to /fitted-kitchens-cork/. You can also edit those Google updates so they link to the new site."},
  {t:"Correct your Houzz and Golden Pages listings",e:"medium",n:1,f:"Houzz shows Newmarket, 086 177 3399 and drummcarpentrycork.ie. Golden Pages shows 'Drumm Carpentry Cork', just 'Cork', (085) 886 4792, the old website and darren@drummcarpentrycork.ie. Your Facebook page shows sales@drummcarpentrycork.ie.",w:"Google and customers both use directories to check your details. Old phone numbers and an old town make the business look harder to reach than it is, and a call to an old mobile might go unanswered.",d:"Log in to each one and update the name, address (The Spa, Mallow, P51 V042), phone ((022) 20289), website (drummkitchens.ie) and opening hours so they match your Google profile exactly. If you don't have the Golden Pages login, they can send you a claim link."},
- {t:"Start posting updates again",e:"quick",o:1,f:"Your most recent update was on 8 August 2024, over two years ago.",w:"Recent posts show anyone looking at your profile that the business is active, and they're an easy way to show off new work.",d:"Post once a month with photos of a finished job and a line or two about it. A phone photo of a newly fitted kitchen or wardrobe is plenty."},
- {t:"Make your review replies personal",e:"quick",o:1,f:"You reply to reviews, which is great, but the replies are short and generic, such as 'Thanks very much Susan' and 'Thanks Sean'.",w:"Future customers read your replies too. A reply that mentions the actual job shows you remember each customer and shows the range of work you do.",d:"Mention the job, for example: 'Thanks Lisa, it was a pleasure working with you on the kitchen, pantry and walk-in wardrobe.' Keep replying to every review."},
+ {t:"Start posting updates again",e:"quick",o:1,f:"Your most recent update was on 8 August 2024, over two years ago (seen in our manual check on 10 October 2026).",w:"Recent posts show anyone looking at your profile that the business is active, and they're an easy way to show off new work.",d:"Post once a month with photos of a finished job and a line or two about it. A phone photo of a newly fitted kitchen or wardrobe is plenty."},
+ {t:"Make review replies more specific, and reply to the 3 you missed",e:"quick",o:1,u:1,f:"Your replies are strong: 27 of your 30 newest reviews have a reply, the median reply time is about 10.6 hours, and every negative review has been answered. Three reviews have no reply yet: 7 Sep 2026 (4 stars), 11 Nov 2025 (5 stars) and 3 Jul 2025 (4 stars). Many replies are short and generic, such as 'Thanks very much Susan' and 'Thanks Sean'.",w:"Future customers read your replies too. A reply that mentions the actual job shows you remember each customer and shows the range of work you do.",d:"Reply to the three missed reviews. In future replies, mention the job, for example: 'Thanks Lisa, it was a pleasure working with you on the kitchen, pantry and walk-in wardrobe.' Keep up the quick replies."},
  {t:"Add your opening hours and business details to the website",e:"medium",n:1,f:"Your opening hours aren't on any page of the website. The site also doesn't have the behind-the-scenes 'LocalBusiness' code that tells Google your address, phone number and hours directly.",w:"Customers look for hours before they visit the showroom, and matching hours on the site and on Google helps Google trust both.",d:"Add your hours (Mon–Fri 9:30–17:30, Sat 10:00–17:00, Sun closed) to the contact page and footer. Ask your web designer to add LocalBusiness markup with the same name, address, phone and hours as the Google profile."},
  {t:"Add a Services list, and pages for the jobs customers mention",e:"medium",u:1,f:"We couldn't see a Services list from public view. Customers mention pantries, utility rooms, walk-in wardrobes and hot presses, but there's no page on the website for those: only a project write-up or a passing mention.",w:"A Services list gives Google, and customers, a clear picture of exactly what you do. A matching page on the website gives them somewhere to land and something for Google to match the search against.",d:"If one isn't set up already, add your main services to the profile, each with a short description: include home renovations, kitchen renovations and media walls, which have pages already. Over time, add pages for pantries, utility rooms and walk-in wardrobes using photos from jobs you've done."},
  {t:"Check your business name and main number are the same everywhere",e:"quick",u:1,f:"The profile name is 'Drumm Carpentry, Kitchens & Wardrobes', but your website mostly says 'Drumm Kitchens & Wardrobes' or 'Drumm Carpentry'. Golden Pages says 'Drumm Carpentry Cork'. The website header and footer use (022) 20289, but the top of the home page also shows (086) 177 3399.",w:"Google's rules say the profile name must match the name you actually trade under, and adding extra words can lead to the listing being suspended. One main number everywhere makes it clear which one to ring.",d:"Make sure the name on Google matches your signage and stationery. If 'Drumm Carpentry, Kitchens & Wardrobes' is your real trading name, there's nothing to change on Google, but use it on the website and directories too. Pick one main number for listings; keep the mobile for WhatsApp if you like."},
- {t:"Review Mallow ad spend",e:"quick",n:1,f:"Around Mallow you rank #1 or #2 on Google Maps for free, but you're also paying for ads there. On 10 October 2026 your ad showed on 'fitted kitchens Mallow', where you were already #1 in the ordinary results and in the map pack.",w:"You may be paying for clicks you'd get anyway. Cork city is where you're hardest to find, so that's where ad money is likely to do more.",d:"In your Google Ads account, compare the ad clicks from Mallow-area searches against the visits you get from the free results for the same searches. If most of them would find you anyway, consider moving that budget to Cork searches, where your ad is currently your only presence for 'fitted kitchens Cork'."}
+ {t:"Review Mallow ad spend",e:"quick",u:1,f:"Around Mallow you rank #1 or #2 on Google Maps for free for all four searches we checked. We couldn't confirm from public view whether you run Google Ads: an automated Google search from Cork on 10 October 2026 found no drummkitchens.ie ads on any of the six searches checked.",w:"If you run Google Ads on Mallow-area searches, you may be paying for clicks you already get for free in Maps. Cork city is where you're hardest to find, so that's where ad money is likely to do more.",d:"Check which areas and keywords your ads target. If they cover Mallow-area searches where you already rank near the top for free, consider moving that budget towards Cork city searches. If you don't run Google Ads, there's nothing to do here."},
+ {t:"Add missing attributes",e:"quick",n:1,f:"Only two attributes are set on the profile: delivery, and card payments (credit and debit cards).",w:"Attributes show on your profile and tell customers what to expect before they get in touch, for example whether you'll come out to measure up or can give an estimate online.",d:"In the profile editor, go through the attributes Google offers for your category and add any that apply, such as onsite services and online estimates. Only add the ones that are true for your business."},
+ {t:"Check the second Drumm listing",e:"quick",n:1,f:"An unrated pin called 'Drumm Carpentry Factory', with no address or category showing, appeared in 'carpenter' searches on Google Maps: #2 from Charleville, #5 from Kanturk and #9 from Buttevant.",w:"A duplicate listing can split reviews and calls between two pins and leave customers unsure which one is you. An unrated pin also looks less trustworthy than your main 4.9-star listing.",d:"Check the second Drumm listing: if it's a duplicate, merge or remove it through Google Business Profile support; if it's a genuine separate premises, verify and complete it."}
 ];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const tag=s=>`<span class="tag ${S[s][1]}">${S[s][0]}</span>`;
@@ -484,35 +582,53 @@ document.querySelectorAll('.filters[data-for]').forEach(fb=>{
  fb.querySelectorAll('button').forEach(b=>b.onclick=()=>{fb.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));apply(b.dataset.f);});
  apply('all');
 });
-// rankings (checked signed out, 10 Oct 2026)
-const YOU="Drumm Carpentry, Kitchens & Wardrobes (you)";
-const MAPS=[
- {l:"Mallow",q:"fitted kitchens",p:2,top:[["Crafted Fitted Furniture","4.1",57],[YOU,"4.9",118],["Anthony Lynes Fitted Furniture","4.6",9]]},
- {l:"Mallow",q:"fitted wardrobes",p:1,top:[[YOU,"4.9",118],["Crafted Fitted Furniture"],["Naturally Wood kitchens & Bedrooms","3.7",9]]},
- {l:"Mallow",q:"carpenter",p:2,top:[["Mick Gibbons Carpentry Limited","5.0",1],[YOU,"4.9",118],["Whelan Carpentry Services","5.0",3]]},
- {l:"Mallow",q:"kitchen showroom",p:1,top:[[YOU,"4.9",118]],more:"Other places not recorded.",sp:"Cash & Carry Kitchens"},
- {l:"Cork",q:"fitted kitchens",p:null,top:[["Kitchen World Cork","4.7",97],["Glenline Interiors","4.6",29],["Woodlands Kitchens Ltd","4.6",26]]},
- {l:"Cork",q:"fitted wardrobes",p:null,top:[["Sliding Door Wardrobes","4.9",149],["Slide Glide","5.0",68],["SlideDeco Wardrobes","5.0",21]],sp:"Fairmont Home Interiors"},
- {l:"Cork",q:"kitchen showroom",p:null,top:[["Kitchen World Cork","4.7",97],["Celtic Interiors","4.7",53],["The Kitchen Centre","4.7",14]],sp:"Cash & Carry Kitchens"},
- {l:"Cork",q:"media wall",p:null,top:[["Munster feature walls and floors","5.0",14],["Cork Media Walls","5.0",6],["Wall Web Design","4.7",12]]}
-];
-const WEB=[
- {l:"Mallow",q:"fitted kitchens Mallow",p:1,u:"https://drummkitchens.ie/",mp:true,x:"You also ran a paid ad on this search."},
- {l:"Mallow",q:"carpenter Mallow",p:6,u:"https://drummkitchens.ie/",mp:true},
- {l:"Cork",q:"fitted kitchens Cork",p:null,mp:false,x:"Your paid ad was the only place you appeared. Top organic results: blackpoolkitchens.ie, thekitchencentre.ie, facebook.com."},
- {l:"Cork",q:"fitted wardrobes Cork",p:2,u:"https://drummkitchens.ie/fitted-wardrobes/",mp:false},
- {l:"Cork",q:"kitchen showroom Cork",p:8,u:"https://drummkitchens.ie/fitted-kitchens-cork/",mp:true},
- {l:"Cork",q:"media wall Cork",p:8,u:"https://drummkitchens.ie/fitted-furniture/media-walls/",mp:false}
-];
+// rankings: automated collection, 10 Oct 2026
+const YOU="Drumm Carpentry, Kitchens & Wardrobes",FACTORY="Drumm Carpentry Factory",OTHER="Drumm Fencing & Carpentry Cork";
+const QS=["fitted kitchens", "fitted wardrobes", "kitchen showroom", "carpenter"];
+const TOWNS=[["Mallow", 52.1357, -8.6403], ["Buttevant", 52.2333, -8.6667], ["Charleville", 52.3557, -8.6838], ["Kanturk", 52.1725, -8.905], ["Fermoy", 52.1386, -8.2756], ["Blarney", 51.9333, -8.5667], ["Cork city", 51.8985, -8.4756]];
+const NOTCHK=[["Newmarket", 52.2156, -9.0003]];
+const RANK={"Mallow|fitted kitchens": {"p": 2, "f": null, "top": [["Crafted Fitted Furniture", 4.1, 57], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Woodcraft Kitchens", 4.6, 5]]}, "Mallow|fitted wardrobes": {"p": 1, "f": null, "top": [["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Crafted Fitted Furniture", 4.1, 57], ["Woodcraft Kitchens", 4.6, 5]]}, "Mallow|kitchen showroom": {"p": 1, "f": null, "top": [["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Woodcraft Kitchens", 4.6, 5], ["JMR House to Home Centre", 4.7, 108]]}, "Mallow|carpenter": {"p": 2, "f": null, "top": [["Mick Gibbons Carpentry Limited", 5, 1], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Whelan Carpentry Services", 5, 3]]}, "Buttevant|fitted kitchens": {"p": 2, "f": null, "top": [["Woodcraft Kitchens", 4.6, 5], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Crafted Fitted Furniture", 4.1, 57]]}, "Buttevant|fitted wardrobes": {"p": 1, "f": null, "top": [["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Sliding Door Wardrobes", 4.9, 149], ["Woodcraft Kitchens", 4.6, 5]]}, "Buttevant|kitchen showroom": {"p": 2, "f": null, "top": [["Woodcraft Kitchens", 4.6, 5], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118], ["Topshelf Kitchens", 5, 39]]}, "Buttevant|carpenter": {"p": 5, "f": 9, "top": [["TMMR Building & Carpentry", 5, 2], ["Brian Linehan Construction Services", 5, 1], ["Denis Cremin Carpentry & Building", null, null]]}, "Charleville|fitted kitchens": {"p": 3, "f": null, "top": [["Seamus Reidy Custom Made Kitchens", 4.8, 8], ["Crafted Fitted Furniture", 4.1, 57], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118]]}, "Charleville|fitted wardrobes": {"p": 6, "f": null, "top": [["James Kilner Fitted Wardrobes & Bedrooms Leeds", 5, 206], ["Thom Fitted Wardrobes", 5, 11], ["Sliding Door Wardrobes", 4.9, 149]]}, "Charleville|kitchen showroom": {"p": null, "f": null, "top": [["Reform Showroom Dumbo", 4.4, 63], ["Henrybuilt New York Showroom", 4.6, 16], ["MD O'Sheas & Sons Charleville", 4.5, 292]]}, "Charleville|carpenter": {"p": 8, "f": 2, "top": [["TMMR Building & Carpentry", 5, 2], ["Drumm Carpentry Factory", null, null], ["SC Carpentry Services", 5, 1]]}, "Kanturk|fitted kitchens": {"p": 5, "f": null, "top": [["Kanturk Fitted Furniture", 4.5, 2], ["Brogeen Crafts", 5, 1], ["Woodcraft Kitchens", 4.6, 5]]}, "Kanturk|fitted wardrobes": {"p": 5, "f": null, "top": [["Sliding Door Wardrobes", 4.9, 149], ["James Kilner Fitted Wardrobes & Bedrooms Leeds", 5, 206], ["Thom Fitted Wardrobes", 5, 11]]}, "Kanturk|kitchen showroom": {"p": null, "f": null, "top": [["Reform Showroom Dumbo", 4.4, 63], ["Henrybuilt New York Showroom", 4.6, 16], ["Burke's HomeValue", 4.7, 110]]}, "Kanturk|carpenter": {"p": 9, "f": 5, "top": [["Denis Cremin Carpentry & Building", null, null], ["Drumm Fencing & Carpentry Cork", 5, 1], ["SG Carpentry Services", 5, 5]]}, "Fermoy|fitted kitchens": {"p": 4, "f": null, "top": [["Fermoy kitchens", 4.7, 13], ["4my Units", 5, 2], ["Toss Bryan Ltd", 4.3, 870]]}, "Fermoy|fitted wardrobes": {"p": 3, "f": null, "top": [["Fermoy kitchens", 4.7, 13], ["4my Units", 5, 2], ["Drumm Carpentry, Kitchens & Wardrobes", 4.9, 118]]}, "Fermoy|kitchen showroom": {"p": null, "f": null, "top": [["Reform Showroom Dumbo", 4.4, 63], ["Fermoy kitchens", 4.7, 13], ["Henrybuilt New York Showroom", 4.6, 16]]}, "Fermoy|carpenter": {"p": 20, "f": null, "top": [["Don Pyne Carpentry & Roofing Services", 4.9, 46], ["SMG Installations", 5, 2], ["McMahon Builders Providers - Fermoy", 4.4, 53]]}, "Blarney|fitted kitchens": {"p": null, "f": null, "top": [["Barry & Byrne Kitchens", 4.8, 22], ["Blackpool Kitchens and Bedrooms", 4.9, 17], ["The Panelling Centre", 4.6, 23]]}, "Blarney|fitted wardrobes": {"p": null, "f": null, "top": [["Fusion Furniture bedroom wardrobes", 5, 13], ["James Twomey Fitted Furniture Ltd", 5, 21], ["Martin Murphy Fitted Furniture Ltd", 5, 8]]}, "Blarney|kitchen showroom": {"p": null, "f": null, "top": [["Barry & Byrne Kitchens", 4.8, 22], ["The Kitchen Centre", 4.7, 14], ["Blackpool Kitchens and Bedrooms", 4.9, 17]]}, "Blarney|carpenter": {"p": null, "f": null, "top": [["Cutting Edge Carpentry & Construction Ltd.", 4.8, 22], ["Daniel Trivelatto", 4.8, 16], ["Blackthorn Carpentry & Building Solutions Ltd", 5, 15]]}, "Cork city|fitted kitchens": {"p": null, "f": null, "top": [["Kitchen World Cork", 4.7, 97], ["Stylecraft kitchens & Bedrooms", 4.7, 16], ["Woodlands Kitchens Ltd", 4.6, 26]]}, "Cork city|fitted wardrobes": {"p": null, "f": null, "top": [["Sliding Door Wardrobes", 4.9, 149], ["Slide Glide - Sliding Wardrobes Cork", 5, 68], ["Aubie O'Rourke Fitted Furniture", 5, 21]]}, "Cork city|kitchen showroom": {"p": null, "f": null, "top": [["Kitchen World Cork", 4.7, 97], ["Celtic Interiors", 4.7, 53], ["Kube Kitchens & Interiors (Cork Showroom)", 4.3, 93]]}, "Cork city|carpenter": {"p": null, "f": null, "top": [["NK Carpenter", 5, 12], ["Carpentry Joinery Cork", 4, 4], ["Elevate Carpentry and Construction Cork", 5, 11]]}};
+const WEB=[{"q": "fitted kitchens Cork", "p": [6], "u": "https://drummkitchens.ie/fitted-kitchens-cork/", "ads": "Barry & Byrne Kitchens (2 ads)", "x": "Earlier manual check (different location): not in the ordinary results."}, {"q": "kitchen showroom Cork", "p": [6, 17], "u": "https://drummkitchens.ie/fitted-kitchens-cork/classic-kitchens/", "ads": null, "x": "Earlier manual check (different location): #8."}, {"q": "fitted kitchens Mallow", "p": [], "u": null, "ads": "Cash & Carry Kitchens", "x": "Earlier manual check (different location): #1."}, {"q": "fitted wardrobes Cork", "p": [], "u": null, "ads": null, "x": "Earlier manual check (different location): #2."}, {"q": "carpenter Mallow", "p": [], "u": null, "ads": null, "x": "Earlier manual check (different location): #6. Google showed an AI Overview on this search."}, {"q": "media wall Cork", "p": [], "u": null, "ads": null, "x": "Earlier manual check (different location): #8."}];
+const FAR=/Dumbo|New York|Leeds/;
+const band=p=>p==null?'r':p<=3?'g':p<=10?'a':p<=20?'o':'r';
+const ptxt=p=>p==null?'>20':'#'+p;
 const pos=p=>p==null?'<span class="pos p-out">Not in top 20</span>':`<span class="pos ${p<=3?'p-top':p<=10?'p-mid':'p-out'}">#${p}</span>`;
-const locName=l=>l==="Cork"?"Cork city centre":"Mallow town centre";
-const top3=r=>`<ol class="top3">${r.top.map(([n,rt,c])=>`<li>${n===YOU?`<span class="you">${esc(n)}</span>`:esc(n)}${rt?` <span class="rate">${rt}★ (${c} review${c==1?'':'s'})</span>`:''}</li>`).join('')}</ol>${r.more?`<div class="note">${esc(r.more)}</div>`:''}`;
-document.querySelector('#mapsTable tbody').innerHTML=MAPS.map(r=>`<tr data-loc="${r.l}"><td data-l="Searched from">${locName(r.l)}</td><td data-l="Search"><b>${esc(r.q)}</b></td><td data-l="Your position">${pos(r.p)}</td><td data-l="Top three on the map">${top3(r)}</td><td data-l="Sponsored listing">${r.sp?esc(r.sp):'<span class="note">None noted</span>'}</td></tr>`).join('');
-document.querySelector('#webTable tbody').innerHTML=WEB.map(r=>`<tr data-loc="${r.l}"><td data-l="Search"><b>${esc(r.q)}</b></td><td data-l="Your organic position">${pos(r.p)}</td><td data-l="Page that showed">${r.u?link(r.u):'<span class="note">–</span>'}</td><td data-l="Your profile in the map pack">${r.mp?'<span class="tag t-ok">Yes</span>':'<span class="tag t-warn">No</span>'}</td><td data-l="Notes">${r.x?esc(r.x):''}</td></tr>`).join('');
-(()=>{const fb=document.getElementById('rankFilter'),cnt=fb.querySelector('.count');
- const apply=l=>{let m=0,w=0;document.querySelectorAll('#mapsTable tbody tr,#webTable tbody tr').forEach(tr=>{const show=l==='all'||tr.dataset.loc===l;tr.hidden=!show;if(show){tr.closest('table').id==='mapsTable'?m++:w++;}});cnt.textContent=`Showing ${m} Maps search${m==1?'':'es'} and ${w} web search${w==1?'':'es'}`;};
- fb.querySelectorAll('button').forEach(b=>b.onclick=()=>{fb.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));apply(b.dataset.loc);});
- apply('all');})();
+const rv=(rt,c)=>rt==null?' <span class="rate">no rating</span>':` <span class="rate">${Number(rt).toFixed(1)}★ (${c} review${c==1?'':'s'})</span>`;
+const nm=n=>n===YOU?`<span class="you">${esc(n)} (you)</span>`:n===FACTORY?`${esc(n)} <span class="rate">(unrated second Drumm pin)</span>`:n===OTHER?`${esc(n)} <span class="rate">(a different business)</span>`:esc(n);
+const plain=n=>n===YOU?n+' (you)':n;
+let selT='Cork city',selQ='fitted kitchens';
+const gridB=document.querySelector('#rankGrid tbody');
+gridB.innerHTML=TOWNS.map(([t])=>`<tr><td>${esc(t)}</td>${QS.map(q=>{const r=RANK[t+'|'+q];return `<td><button type="button" class="rb ${band(r.p)}" data-t="${esc(t)}" data-q="${esc(q)}" aria-pressed="false" title="${esc(t)}, ${esc(q)}: ${r.p==null?'not in the top 20':'#'+r.p}. Top 3: ${esc(r.top.map((x,i)=>(i+1)+'. '+plain(x[0])).join('; '))}" aria-label="${esc(t)}, ${esc(q)}: ${r.p==null?'not in the top 20':'position '+r.p}">${ptxt(r.p)}</button></td>`}).join('')}</tr>`).join('');
+const det=document.getElementById('rankDetail');
+function showCell(t,q){selT=t;selQ=q;const r=RANK[t+'|'+q];
+ det.innerHTML=`<h4>${esc(t)} · '${esc(q)}'</h4><div>Your position: <span class="rb ${band(r.p)}">${r.p==null?'Not in top 20':'#'+r.p}</span></div><p><b>Top three on the map</b></p><ol class="top3">${r.top.map(([n,rt,c])=>`<li>${nm(n)}${rv(rt,c)}</li>`).join('')}</ol>${r.f?`<p class="note">The unrated 'Drumm Carpentry Factory' pin was #${r.f} in this search.</p>`:''}${r.top.some(x=>FAR.test(x[0]))?'<p class="note">This search returned far-away businesses, so local results here are thin.</p>':''}`;
+ gridB.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t&&b.dataset.q===q));
+ if(q!==mapQ){mapQ=q;drawMap();}else markSel();}
+gridB.addEventListener('click',e=>{const b=e.target.closest('button.rb');if(b)showCell(b.dataset.t,b.dataset.q);});
+// map-like layout
+const svg=document.getElementById('rankMap'),NS='http://www.w3.org/2000/svg';
+const LON0=-9.08,LAT1=52.42,K=1011,CX=Math.cos(52.15*Math.PI/180);
+const xy=(la,lo)=>[30+(lo-LON0)*CX*K,30+(LAT1-la)*K];
+const LBL={"Mallow":[31,8,'start'],"Buttevant":[31,8,'start'],"Charleville":[31,8,'start'],"Kanturk":[0,53,'middle'],"Fermoy":[0,-35,'middle'],"Blarney":[-31,8,'end'],"Cork city":[31,8,'start']};
+const FILL={g:'#1d7a45',a:'#f2b632',o:'#e2701f',r:'#B92533'},TXT={g:'#fff',a:'#151515',o:'#151515',r:'#fff'};
+let mapQ=selQ;
+const tabs=document.getElementById('mapTabs');
+tabs.innerHTML=QS.map(q=>`<button type="button" data-q="${esc(q)}" aria-pressed="${q===mapQ}">${esc(q)}</button>`).join('');
+tabs.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;mapQ=b.dataset.q;const t=TOWNS.some(x=>x[0]===selT)?selT:'Mallow';showCell(t,mapQ);});
+function markSel(){svg.querySelectorAll('.town').forEach(g=>g.classList.toggle('sel',g.dataset.t===selT&&mapQ===selQ));}
+function drawMap(){
+ tabs.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.q===mapQ));
+ const sb=10/111.2*K; let o=`<rect x="2" y="2" width="596" height="606" rx="18" fill="#FAF8F5" stroke="#ece7e3"/>`;
+ o+=`<g fill="#6b6866" font-family="system-ui,sans-serif"><path d="M556 34l10 26h-20z" /><text x="556" y="82" text-anchor="middle" font-size="20" font-weight="700">N</text>`;
+ o+=`<path d="M30 585h${sb.toFixed(1)}" stroke="#6b6866" stroke-width="3"/><path d="M30 578v14M${(30+sb).toFixed(1)} 578v14" stroke="#6b6866" stroke-width="2"/><text x="${(30+sb+10).toFixed(1)}" y="592" font-size="19">10 km</text></g>`;
+ NOTCHK.forEach(([t,la,lo])=>{const [x,y]=xy(la,lo);o+=`<g font-family="system-ui,sans-serif"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="13" fill="#fff" stroke="#b9b3ae" stroke-width="3" stroke-dasharray="4 3"/><text x="${x.toFixed(1)}" y="${(y-44).toFixed(1)}" text-anchor="middle" font-size="22" fill="#6b6866">${esc(t)}</text><text x="${x.toFixed(1)}" y="${(y-22).toFixed(1)}" text-anchor="middle" font-size="18" fill="#8d8884">not checked</text></g>`;});
+ TOWNS.forEach(([t,la,lo])=>{const [x,y]=xy(la,lo),r=RANK[t+'|'+mapQ],b=band(r.p),[dx,dy,an]=LBL[t];
+  o+=`<g class="town" data-t="${esc(t)}" tabindex="0" role="button" aria-label="${esc(t)}: ${r.p==null?'not in the top 20':'position '+r.p} for ${esc(mapQ)}" font-family="system-ui,sans-serif"><title>${esc(t)}, ${esc(mapQ)}: ${r.p==null?'not in the top 20':'#'+r.p}. Top 3: ${esc(r.top.map((x,i)=>(i+1)+'. '+plain(x[0])).join('; '))}</title><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="25" fill="${FILL[b]}" stroke="#fff" stroke-width="3"/><text x="${x.toFixed(1)}" y="${(y+(r.p==null?6:7.5)).toFixed(1)}" text-anchor="middle" font-size="${r.p==null?17:21}" font-weight="800" fill="${TXT[b]}">${r.p==null?'>20':r.p}</text><text x="${(x+dx).toFixed(1)}" y="${(y+dy).toFixed(1)}" text-anchor="${an}" font-size="25" font-weight="650" fill="#151515">${esc(t)}</text>${t==='Mallow'?`<text x="${(x+dx).toFixed(1)}" y="${(y+dy+24).toFixed(1)}" text-anchor="start" font-size="19" fill="#6b6866">your showroom</text>`:''}</g>`;});
+ svg.innerHTML=o;
+ svg.querySelectorAll('.town').forEach(g=>{const go=()=>showCell(g.dataset.t,mapQ);g.addEventListener('click',go);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+ markSel();}
+drawMap();showCell(selT,selQ);
+document.querySelector('#webTable tbody').innerHTML=WEB.map(r=>`<tr><td data-l="Search"><b>${esc(r.q)}</b></td><td data-l="Your organic position">${r.p.length?r.p.map(p=>pos(p)).join(' '):pos(null)}</td><td data-l="Page that showed">${r.u?link(r.u):'<span class="note">–</span>'}</td><td data-l="Ads on the page">${r.ads?esc(r.ads):'<span class="note">None seen</span>'}</td><td data-l="Notes">${esc(r.x)}</td></tr>`).join('');
 // stars
 const st=[[5,111],[4,4],[3,1],[2,0],[1,2]],tot=st.reduce((a,b)=>a+b[1],0);
 document.getElementById('stars').innerHTML=st.map(([s,n])=>`<div>${s} ★</div><div class="bar" role="img" aria-label="${n} ${s}-star reviews"><span style="width:${(n/tot*100).toFixed(1)}%"></span></div><div class="n">${n}</div>`).join('');
